@@ -1,0 +1,22 @@
+marca                               VARCHAR(50)                   NOT_NULL
+modello                             VARCHAR(50)                   NOT_NULL
+segmento                            VARCHAR(50)                   NOT_NULL
+cambio                              VARCHAR(20)                   NOT_NULL
+kilometraggio                       MEDIUMINT                     NOT_NULL
+targa                               VARCHAR(7)                    NOT_NULL            PRIMARY_KEY                       UNIQUE
+n_proprietari                       TINYINT                       NOT_NULL
+hybrid                              BOOLEAN                       NOT_NULL
+alimentazione                       VARCHAR(50)                   NOT_NULL
+classe_inquinamento                 VARCHAR(2)                    NULL
+cilindrata                          SMALLINT                      NOT_NULL
+cavalli                             SMALLINT                      NOT_NULL
+accel_0_100                         TINYINT                       NOT_NULL
+velocita_massima                    SMALLINT                      NOT_NULL
+trazione                            VARCHAR(20)                   NOT_NULL
+dimensioni                          VARCHAR(255)                  NOT_NULL
+n_porte                             TINYINT                       NOT_NULL
+colore                              VARCHAR(20)                   NOT_NULL
+data_produzione                     DATE                          NOT_NULL
+data_immatricolazione               DATE                          NOT_NULL
+optional                            TEXT                          NULL                DEFAULT(Nessun optional)
+note                                TEXT                          NULL
